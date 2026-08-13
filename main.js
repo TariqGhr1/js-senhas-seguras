@@ -10,18 +10,20 @@ function diminuiTamanho() {
     if (tamanhoSenha > 1 ) { 
         tamanhoSenha = tamanhoSenha - 1;
     }
-    numeroSenha.text.content = tamanhoSenha;
+    numeroSenha.textContent = tamanhoSenha;
     geraSenha();
 }
 
 function aumentaTamanho() {
-    if (tamanhoSenha < 20 ) {
+    if ( tamanhoSenha < 20 ) {
         tamanhoSenha = tamanhoSenha + 1;
     }
     numeroSenha.textContent = tamanhoSenha;
+    geraSenha();
 }
 
 const campoSenha = document.querySelector('#campo-senha');
+const checkbox = document.querySelectorAll
 
 const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 geraSenha();
