@@ -11,6 +11,7 @@ function diminuiTamanho() {
         tamanhoSenha = tamanhoSenha - 1;
     }
     numeroSenha.text.content = tamanhoSenha;
+    geraSenha();
 }
 
 function aumentaTamanho() {
